@@ -10,10 +10,9 @@ h3 {
   color: white;
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  font-size: 90px;
+  font-size: 300%;
   letter-spacing: 0.05em;
   margin: 0;
-  padding-top: 50px;
 }
 
 h4 {
@@ -33,7 +32,9 @@ h4 {
 
 h5 {
   margin: 0 auto;
-  width: 50%;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  width: 75%;
   text-align: center;
   color: rgb(158, 158, 158);
   font-family: 'Roboto', sans-serif;
@@ -52,8 +53,8 @@ h5 {
 
 .p1 {
   margin: 0 auto;
-  width: 50%;
-  text-align: justify;
+  margin-bottom: 10%;
+  width: 85%;
   color: rgb(158, 158, 158);
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -70,7 +71,7 @@ h5 {
   text-align: center;
   font-weight: lighter;
   font-family: 'Roboto', sans-serif;
-  font-size: 50px;
+  font-size: 200%;
   letter-spacing: 0.05em;
   margin: 0 auto;
   padding-top: 30px;
@@ -79,22 +80,30 @@ h5 {
 .arrow {
   display: block;
   margin: auto;
-  padding-top: 200px;
+  padding-top: 110px;
 }
 
 /* Navigation Style */
 
+.wrapper-1 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 nav {
+  display: flex;
   min-height: 20px;
-  position: fixed;
-  top: 0;
-  left:0;
-  right:0;
-  border-bottom: 3px solid #fff;
+  margin: 0 auto;
+  width: 100%;
+  /*position: fixed;*/
+  /*border-bottom: 3px solid #fff;*/
 }
 
 nav ul {
+  display: flex;
+  flex-direction: column;
   list-style: none;
+  width: 100%;
   background-color: rgb(22, 123, 193);
   text-align: center;
   padding: 0;
@@ -102,15 +111,16 @@ nav ul {
 }
 
 nav li {
-  display: inline-block;
-  width: 150px;
   font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
   line-height: 40px;
+  border-top: 1px solid rgb(255, 255, 255);
 }
 
 nav a {
+  display: block;
   text-decoration: none;
+  margin: 0 auto;
   color: #fff;
   opacity: 0.7;
 }
@@ -128,7 +138,7 @@ nav a.active {
 /* Div styles */
 
 #main {
-  height: 500px;
+  height: 300px;
   width: auto;
   margin: 0;
   padding-top: 40px;
@@ -136,16 +146,12 @@ nav a.active {
 }
 
 #about {
-  height: 500px;
   width: auto;
-  margin: 0;
-  padding-top: 40px;
 }
 
 #skills {
   width: auto;
   margin: 0;
-  padding-top: 40px;
 }
 
 #work {
@@ -159,9 +165,9 @@ nav a.active {
 
 #contact {
   color: white;
-  height: 300px;
   width: auto;
   margin: 0;
+  margin-top: 30px;
   padding-top: 40px;
   background-color: rgb(158, 158, 158);
 }
@@ -189,14 +195,14 @@ nav a.active {
 /* Contact Styles */
 
 .social {
-  margin: 60px 60px;
+  margin: 40px;
   width: 50px;
   height: 50px;
 }
 
 .flex1 {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -212,7 +218,7 @@ nav a.active {
 
 .bar {
   margin: 0 auto;
-  width: 70%;
+  width: 90%;
 }
 
 .bar2 {
@@ -228,7 +234,7 @@ nav a.active {
 
 .level {
 	height:30px;
-	background:#aae0aa;
+	background:#cccccc;
   width:inherit%;
 }
 
@@ -353,4 +359,11 @@ nav a.active {
 	100% {
 	    width: 25%;
 	}
+}
+
+@media (min-width: 550px) {
+  .wrapper-1 {
+    flex-direction: column;
+  }
+
 }
