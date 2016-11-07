@@ -17,6 +17,7 @@ h3 {
 
 h4 {
   text-align: center;
+  margin-top: 0;
   color: rgb(158, 158, 158);
   font-family: 'Roboto', sans-serif;
   font-size: 40px;
@@ -53,7 +54,7 @@ h5 {
 
 .p1 {
   margin: 0 auto;
-  margin-bottom: 10%;
+  padding: 50px 0;
   width: 85%;
   color: rgb(158, 158, 158);
   font-family: 'Roboto', sans-serif;
@@ -114,7 +115,7 @@ nav li {
   font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
   line-height: 40px;
-  border-top: 1px solid rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 nav a {
@@ -143,10 +144,11 @@ nav a.active {
   margin: 0;
   padding-top: 40px;
   background-color: rgb(22, 123, 193);
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 #about {
-  width: auto;
+  padding-top: 50px;
 }
 
 #skills {
@@ -190,6 +192,11 @@ nav a.active {
   width: 50px;
   height: 70px;
   margin: 10px;
+}
+
+.pic-1 {
+  width: 100%;
+  heigh: auto;
 }
 
 /* Contact Styles */
@@ -364,6 +371,39 @@ nav a.active {
 @media (min-width: 550px) {
   .wrapper-1 {
     flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    position: fixed;
+  }
+
+  nav li {
+    border-bottom: none;
+  }
+
+  nav a {
+    margin: 0 25px;
+  }
+
+}
+
+@media (min-width: 750px) {
+
+  #about {
+    background-image: url("../images/self1.jpg");
+    background-size: cover;
+  }
+
+  .pic-1 {
+    display: none;
+  }
+
+  .p1 {
+    width: 35%;
+    margin-left: 75px;
   }
 
 }
