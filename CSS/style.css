@@ -174,11 +174,10 @@ nav a.active {
 
 #work {
   color: white;
-  height: 500px;
   width: 100%;
   margin: 0;
-  padding-top: 40px;
-  background-color: rgb(158, 158, 158);
+  padding: 40px 0;
+  background-color: rgb(204, 204, 204);
 }
 
 #contact {
@@ -187,7 +186,7 @@ nav a.active {
   margin: 0;
   margin-top: 30px;
   padding-top: 40px;
-  background-color: rgb(158, 158, 158);
+  background-color: rgb(204, 204, 204);
 }
 
 /* Image Styles */
@@ -228,13 +227,32 @@ nav a.active {
   justify-content: center;
 }
 
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  max-width: 75%;
+  margin: 0 auto;
+}
 
+.projects li {
+  display: flex;
+  list-style: none;
+  margin: 0 auto;
+  padding: 5% 1%;
+}
 
+.work-pic {
+  /*margin: 0 auto;
+  padding: 20px;*/
+}
 /*Skills Styles */
 
 .task {
   display: flex;
 }
+
+
 
 /*Graph Bars*/
 
@@ -245,7 +263,7 @@ nav a.active {
 
 .bar2 {
 	height:30px;
-	background:#cccccc;
+	background:rgb(204, 204, 204);
 	color:#f4f4f4;
 	text-align:center;
 	width:100%;
@@ -256,7 +274,7 @@ nav a.active {
 
 .level {
 	height:30px;
-	background:#cccccc;
+	background:rgb(195, 195, 195);
   width:inherit%;
 }
 
@@ -458,6 +476,25 @@ nav a.active {
     width:60%;
     background-color: rgba(255, 255, 255, .80);
   }
+
+  .projects {
+    max-width: 60%;
+  }
+
+  .projects li {
+    padding: 5% 1%;
+  }
+
 }
 
+@media (min-width: 1060px) {
+  .projects {
+    max-width: 90%;
+  }
+
+  .projects li {
+    padding: 5%;
+  }
+
+}
 }
