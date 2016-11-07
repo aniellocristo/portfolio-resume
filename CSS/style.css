@@ -82,6 +82,7 @@ h5 {
   display: block;
   margin: auto;
   padding-top: 110px;
+  padding-bottom: 20px;
 }
 
 /* Navigation Style */
@@ -196,7 +197,6 @@ nav a.active {
 
 .pic-1 {
   width: 100%;
-  heigh: auto;
 }
 
 /* Contact Styles */
