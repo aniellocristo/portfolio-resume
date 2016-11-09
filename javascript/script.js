@@ -1,6 +1,5 @@
 // Returns true if the specified element has been scrolled into the viewport.
 function isElementInViewport(elem) {
-  console.log('I am inside');
     var $elem = $(elem);
 
     // Get the scroll position of the page.
