@@ -67,8 +67,9 @@ h5 {
 
 
 .p1 {
-  margin: 0 auto;
-  padding: 50px 0;
+  margin: 20px auto;
+  margin-bottom: 0;
+  padding-top: 50px 0;
   width: 85%;
   color: rgb(158, 158, 158);
   font-family: 'Roboto', sans-serif;
@@ -239,6 +240,7 @@ nav a.active {
   display: flex;
   list-style: none;
   padding: 0;
+  max-width: 100%;
 }
 
 .work-1 {
@@ -488,7 +490,6 @@ nav a.active {
     margin: 0 25px;
   }
 
-}
 .learn-b {
   margin-bottom: 2%;
 }
@@ -500,6 +501,22 @@ nav a.active {
 .arrow-right {
   width: 15px;
   margin-left: 5px;
+}
+
+.projects li {
+  max-width: 50%;
+}
+
+.work-pic {
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.p3 {
+  margin: 10% auto;
+  font-size: 16px;
+}
+
 }
 
 @media (min-width: 850px) {
@@ -523,6 +540,7 @@ nav a.active {
   }
 
   .p3 {
+    width: 80%;
     margin: 20% auto;
   }
 
@@ -532,11 +550,6 @@ nav a.active {
 
   .head4 {
     display: none;
-    /*text-align: center;
-    margin-top: 0;
-    color: rgb(158, 158, 158);
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;*/
   }
 
   .head4-2 {
@@ -556,18 +569,4 @@ nav a.active {
     background-color: rgba(255, 255, 255, .80);
   }
 
-  .projects li {
-    max-width: 50%;
-  }
-
-  .work-pic {
-    margin: 0;
-    flex-wrap: wrap;
-  }
-}
-
-@media (min-width: 1060px) {
-
-
-}
 }
