@@ -112,8 +112,6 @@ nav {
   min-height: 20px;
   margin: 0 auto;
   width: 100%;
-  /*position: fixed;*/
-  /*border-bottom: 3px solid #fff;*/
 }
 
 nav ul {
@@ -249,11 +247,12 @@ nav a.active {
 
 .learn-b {
   position: absolute;
-  bottom:0;
+  bottom: 0;
   width: 100%;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
+  margin-bottom: 5px;
 }
 
 .learn-w {
@@ -264,11 +263,13 @@ nav a.active {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
+  margin-bottom: 5px;
 }
 
 .arrow-right {
   width: 20px;
   margin-left: 10px;
+  margin-bottom: -3px;
 }
 
 .hover-1 {
@@ -300,15 +301,20 @@ nav a.active {
   font-family: 'Roboto', sans-serif;
 }
 
+.ion-button {
+  display: flex;
+}
+
 .site-button {
   display: block;
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 15px 0;
   background-color: rgb(0, 0, 0);
   margin: 0 auto;
+  padding: 10px 0px;
   text-align: center;
+  font-size: 16px;
 }
 
 .link-button {
