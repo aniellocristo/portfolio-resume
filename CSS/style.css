@@ -509,6 +509,9 @@ nav a.active {
   margin-left: 5px;
 }
 
+.projects {
+  flex-direction: row;
+}
 .projects li {
   max-width: 50%;
 }
