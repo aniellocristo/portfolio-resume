@@ -509,13 +509,6 @@ nav a.active {
   margin-left: 5px;
 }
 
-.projects {
-  flex-direction: row;
-}
-.projects li {
-  max-width: 50%;
-}
-
 .work-pic {
   margin: 0;
   flex-wrap: wrap;
@@ -524,6 +517,10 @@ nav a.active {
 .p3 {
   margin: 10% auto;
   font-size: 16px;
+}
+
+.projects li {
+  max-width: 50%;
 }
 
 }
