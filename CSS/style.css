@@ -237,8 +237,6 @@ nav a.active {
 .projects li {
   display: flex;
   list-style: none;
-  /*padding: 0;*/
-  /*max-width: 100%;*/
 }
 
 .work-1 {
@@ -520,7 +518,7 @@ nav a.active {
 }
 
 .projects li {
-  max-width: 50%;
+  width: 50%;
 }
 
 }
