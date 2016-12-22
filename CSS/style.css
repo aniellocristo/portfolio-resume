@@ -532,6 +532,8 @@ nav a.active {
   #about {
     background-image: url("../images/self1.jpg");
     background-size: cover;
+    max-width: 1400px;
+    margin: 0 auto;
   }
 
   .pic-1 {
